@@ -1,43 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="./styles.css">
+
   <title>Frontend Mentor | Expenses chart component</title>
+<script type="module" src="./script.js" defer></script>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+
 <body>
+<script>
 
-  My balance
-  $921.48
+</script>
 
-  Spending - Last 7 days
+  <main class="main-content">
 
-  mon
-  tue
-  wed
-  thu
-  fri
-  sat
-  sun
+    <div class="my-balance-wrapper">
 
-  Total this month
-  $478.33
+      <div class="balance-content">
+        <p>
+          My balance
+        </p>
+        <h1 class="my-balance-value">
+          $921.48
+        </h1>
+      </div>
 
-  +2.4%
-  from last month
-  
+      <img class="balance-logo" src="./images/logo.svg" alt="logo">
+    </div>
+
+    <div class="spending-wrapper">
+
+      <h1 class="spending-title">
+        Spending - Last 7 days
+      </h1>
+
+      <div class="spending-chart-wrapper">
+        <div class="chart-item">
+          <div id="mon-value" class="c-item-value"></div>
+          <p id="c-item-label-mon"></p>
+        </div>
+        <div class="chart-item">
+          <div id="tue-value" class="c-item-value"></div>
+          <p id="c-item-label-tue"></p>
+        </div>
+        <div class="chart-item">
+          <div id="wed-value" class="c-item-value"></div>
+          <p id="c-item-label-wed"></p>
+        </div>
+        <div class="chart-item">
+          <div id="thu-value" class="c-item-value"></div>
+          <p id="c-item-label-thu"></p>
+        </div>
+        <div class="chart-item">
+          <div id="fri-value" class="c-item-value"></div>
+          <p id="c-item-label-fri"></p>
+        </div>
+        <div class="chart-item">
+          <div id="sat-value" class="c-item-value"></div>
+          <p id="c-item-label-sat"></p>
+        </div>
+        <div class="chart-item">
+          <div id="sun-value" class="c-item-value"></div>
+          <p id="c-item-label-sun"></p>
+        </div>
+      </div>
+
+      <hr style="background-attachment: hsl(27, 66%, 92%);">
+
+      <div class="spending-summary">
+        <div class="summary-content">
+          <p>
+            Total this month
+          </p>
+          <h1 id="summary-total-value">
+            $478.33
+          </h1>
+        </div>
+        <div class="summary-change">
+          <h4 class="summary-difference-value">
+            +2.4%
+          </h4>
+          <p>
+            from last month
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://www.linkedin.com/in/janos-berke5/">Berke Janos</a>.
   </div>
 </body>
+
 </html>

@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+:root {
+    /* ## Colors */
+    /* Primary */
+
+    --SoftRed: hsl(10, 79%, 65%);
+    --Cyan: hsl(186, 34%, 60%);
+
+    /* ### Neutral */
+
+    --DarkBrown: hsl(25, 47%, 15%);
+    --MediumBrown: hsl(28, 10%, 53%);
+    --Cream: hsl(27, 66%, 92%);
+    --VeryPaleOrange: hsl(33, 100%, 98%);
+
+}
+
+body {
+    font-size: 18px;
+    font-family: "DM Sans";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 40%;
+    margin: auto;
+    background-color: var(--Cream);
+}
+
+.main-content {
+    width: 100%;
+}
+
+.my-balance-wrapper {
+    background-color: var(--SoftRed);
+    color: var(--VeryPaleOrange);
+    padding: 2rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+}
+
+.my-balance-wrapper p {
+    margin: 0;
+}
+
+.my-balance-value {
+    margin: 0;
+    font-weight: 700;
+    font-size: 1.5rem;
+    
+}
+
+.balance-logo{
+    height: 80%;
+}
+
+.spending-wrapper {
+    background-color: var(--VeryPaleOrange);
+    border-radius: 1rem;
+    padding: 2rem;
+    margin-top: 1rem;
+}
+
+.spending-chart-wrapper {
+    color: var(--MediumBrown);
+}
+
+.spending-summary {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.spending-title {
+    color: var(--DarkBrown);
+    font-size: 1.3rem;
+
+}
+
+.spending-chart-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.chart-item div {
+    width: 2rem;
+    background-color: var(--SoftRed);
+    border-radius: .5rem;
+}
+
+.spending-summary {
+    margin-top: 1rem;
+}
+
+.summary-content p {
+    color: var(--MediumBrown);
+    margin: 0;
+    font-size: 1rem;
+}
+
+#summary-total-value {
+    margin: 0;
+    color: var(--DarkBrown);
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+.summary-change p {
+    color: var(--MediumBrown);
+    margin-top: 0;
+    font-size: 1rem;
+}
+
+.summary-difference-value {
+    color: var(--DarkBrown);
+    margin-bottom: 0;
+}
+
+.attribution {
+    position: fixed;
+    bottom: 5px;
+    text-align: center;
+    width: 100%;
+    font-size: .9rem;
+}
+
+@media only screen and (max-width: 375px)
+{
+    body {
+        width: 90%;
+        margin: 1rem;
+    }
+}
